@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, makeStyles, Typography, Grid, Paper } from "@material-ui/core";
+import MiniPiePlot from "./MiniPiePlot";
 
 const useStyles = makeStyles({
   btnStyle: {
@@ -13,6 +14,13 @@ const useStyles = makeStyles({
   paperStyle: {
     background: "orange",
     height: "50px",
+  },
+  paperStyle2: {
+    background: "#fff",
+    width: "70px",
+    height: "40px",
+    margin: "0px",
+    padding: "0px",
   },
 });
 
@@ -74,8 +82,10 @@ const MaterialUI: React.FC = () => {
         <Grid item xs={1}>
           <Paper className={classes.paperStyle}>xs=1</Paper>
         </Grid>
-        <Grid item xs={1}>
-          <Paper className={classes.paperStyle}>xs=1</Paper>
+        <Grid item>
+          <Paper className={classes.paperStyle2}>
+            <MiniPiePlot />
+          </Paper>
         </Grid>
       </Grid>
 
