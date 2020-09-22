@@ -6,6 +6,7 @@ import PiePlot from "./components/PiePlot";
 import BarPlot from "./components/BarPlot";
 import RadarPlot from "./components/RadarPlot";
 import BubblePlot from "./components/BubblePlot";
+import ScatterPlot from "./components/ScatterPlot";
 import MaterialUI from "./components/MaterialUI";
 // import MiniPiePlot from "./components/MiniPiePlot";
 
@@ -17,6 +18,7 @@ function App() {
       <BarPlot />
       <RadarPlot />
       <BubblePlot />
+      <ScatterPlot />
       <MaterialUI />
       {/* <MiniPiePlot /> */}
       {/* MiniPiePlot(50, 5) */}
